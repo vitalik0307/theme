@@ -1,4 +1,3 @@
-<h1>This is single.php file</h1>
 <?php
 
 /**
@@ -30,5 +29,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

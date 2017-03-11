@@ -657,48 +657,87 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .clearfix:after {
-  content: " ";
-  display: block;
+  content: "";
+  display: table;
   clear: both; }
 
-header a, a:visited {
+a, a:visited {
   text-decoration: none;
   color: white; }
 
 a:hover {
   color: grey; }
 
-#banner {
-  position: relative; }
-
-#banner-img {
-  width: 100%;
-  height: 100vh; }
-
-#site-navigation {
-  width: 90%;
-  position: absolute;
-  top: 0; }
-
 .logo {
   height: 33px;
   width: 50px;
   background-size: cover; }
 
-.main-navigation ul li {
-  padding: 15px; }
-
-.main-navigation ul {
-  float: right; }
-
-.main-navigation li:last-child {
-  margin-right: 50px; }
-
 .navigation-logo {
   float: left;
   display: inline-block;
   width: 50px;
-  margin: 10px 30px; }
+  margin: 30px 50px; }
+
+.navigation-logo:hover {
+  cursor: pointer; }
+
+#site-navigation {
+  width: 100%;
+  border-bottom: 2px solid #1b9694; }
+
+#site-navigation ul li {
+  padding: 10px;
+  float: right;
+  list-style: none; }
+
+#site-navigation a {
+  color: #1b9694; }
+
+#home-banner-img {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+#home-site-navigation {
+  position: absolute;
+  top: 0;
+  width: 90%; }
+
+#home-site-navigation ul li {
+  padding: 10px;
+  float: right;
+  list-style: none; }
+
+#about-banner-img {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+#about-site-navigation {
+  position: absolute;
+  top: 0;
+  width: 90%; }
+
+#about-site-navigation ul li {
+  padding: 15px;
+  float: right;
+  list-style: none; }
+
+#sing-banner-img {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+#sing-site-navigation {
+  position: absolute;
+  top: 0;
+  width: 90%; }
+
+#sing-site-navigation ul li {
+  padding: 15px;
+  float: right;
+  list-style: none; }
 
 .clearfix:after {
   content: " ";
@@ -732,7 +771,7 @@ footer.site-footer {
 
 .footer-logo {
   float: right;
-  background-image: url(../../images/logos/inhabitent-logo-text-dark.svg);
+  background-image: url(../../images/logos/inhabitent-logo-text.svg);
   background-size: contain;
   width: 280px;
   height: 50px;
@@ -762,6 +801,7 @@ footer.site-footer {
   height: 8rem; }
 
 .shop-stuff-btn {
+  width: 45%;
   border: none;
   color: white;
   background-color: #1b9694;
@@ -820,4 +860,8 @@ h2 {
   text-align: center; }
 
 .about-text {
+  margin: 10px auto;
   width: 70%; }
+
+.menu-item-51 {
+  color: red; }

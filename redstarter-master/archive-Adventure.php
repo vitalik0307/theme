@@ -1,10 +1,11 @@
-<h1>This is archaive.php</h1>
+
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name:archive-adventures.
  *
  * @package RED_Starter_Theme
  */
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -12,18 +13,18 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<!-- <header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+			</header>  -->      <!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/'.get_post_type() );
+					get_template_part( 'template-parts/content' , get_post_type() );
 				?>
 
 			<?php endwhile; ?>

@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php 
 			// Build product taxonomy loop from product type
 			$terms = get_terms( array(
-			    'taxonomy' => 'Product Type',
+			    'taxonomy' => 'Product-Type',
 			    'hide_empty' => false,
 			) ); 
 			//print_r($terms);
@@ -36,7 +36,7 @@ get_header(); ?>
 				<div class="shop-stuff-descripton">
 				<p><?php echo $term-> description ?></p>
 				</div> <!--end of shop-stuff-description-->
-				<button class="shop-stuff-btn"><?php echo $term-> name?> STUFF</button>
+				<a href=" <?php echo get_permalink() ?>"> <button class="shop-stuff-btn"><?php echo $term-> name?> STUFF</button> </a>
 				</div><!-- end of shop-stuff-item-->
 			<?php } ?>
 			</div><!--end of shop-stuff-->
@@ -59,7 +59,7 @@ get_header(); ?>
 	       			</article>
 
 						<h3> <?php the_title(); ?> </h3>
-						<button class="journal-btn"> READ ENTRY </button>
+						<a class="journal-btn" href="<?php echo get_permalink() ?>" ><button >READ ENTRY </button></a>
 					</div>			
 					<?php endwhile; ?>
 			</div> <!--end of journal-->
@@ -82,7 +82,7 @@ get_header(); ?>
 			          		</div>
 		       			<?php endif; ?>
 		       			</article>
-		       			<button class="adv-btn">READ MORE</button>	
+		       			<a href="<?php echo get_permalink() ?>" > <button class="adv-btn">READ MORE</button></a>	
 
 					
 
@@ -92,7 +92,9 @@ get_header(); ?>
 
 					</div> <!--end of advantures-item -->
 				<?php endwhile; ?>
-				<button id="more-adv-btn">MORE ADVENTURES</button>
+					<?php echo get_post_type_archive_link( "Adventure" );?>
+
+				<a href="<?php echo get_bloginfo('wpurl')?>/Adventure" id="more-adv-btn">MORE ADVENTURES</a>
 			</div><!-- end of advantures -->
 
 		</main><!-- #main -->
