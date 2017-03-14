@@ -860,8 +860,90 @@ h2 {
   text-align: center; }
 
 .about-text {
-  margin: 10px auto;
+  margin: 40px auto;
   width: 70%; }
+
+#about-banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100vh; }
+
+#about-banner h1 {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
 
 .menu-item-51 {
   color: red; }
+
+.post-type-archive-product .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.post-type-archive-product .productArchive a img {
+  width: 100%;
+  height: 18rem; }
+
+.post-type-archive-product .productArchive {
+  width: 20%;
+  margin: 10px 5px; }
+
+.post-type-archive-product .productArchive a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left; }
+
+.post-type-archive-product .productArchive a:hover {
+  color: grey; }
+
+.product-template-default .entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.product-template-default .product-description {
+  width: 40%;
+  margin: 20px 40px 20px 15px; }
+
+.product-template-default .product-image {
+  width: 40%;
+  height: 450px;
+  margin: 20px 15px 20px 40px; }
+
+.product-template-default .product-image img {
+  height: 450px; }
+
+.post-type-archive-adventure .read-more {
+  border: 1px solid white;
+  color: white;
+  border-radius: 0px;
+  background: transparent;
+  padding: 10px; }
+
+.post-type-archive-adventure .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .post-type-archive-adventure .site-main article {
+    margin: 10px;
+    width: 40%;
+    height: 60vh; }
+    .post-type-archive-adventure .site-main article :first-child {
+      margin-top: 50px; }
+    .post-type-archive-adventure .site-main article :last-child {
+      margin-bottom: 50px; }
+    .post-type-archive-adventure .site-main article .adv-img {
+      width: 100%;
+      height: 60vh; }

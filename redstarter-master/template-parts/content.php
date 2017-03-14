@@ -1,4 +1,4 @@
-content
+
 <?php
 /**
  * Template part for displaying posts.
@@ -11,11 +11,17 @@ content
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-				<a href="<?php echo get_permalink($post->ID);?>">
-			<?php the_post_thumbnail( 'large' ); ?></a>
+			<a href="<?php echo get_permalink($post->ID);?>">
+			<div class="adv-img"
+			style="background:url(<?php the_post_thumbnail_url('large')?>)center no-repeat;
+			background-size: cover;">
+			
+			<button class="read-more">READ MORE</button>	
+			</a>
 		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?> 
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -24,7 +30,7 @@ content
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	 <div class="entry-content">
+	 <!-- <div class="entry-content">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-content-->
+	</div> -->
 </article><!-- #post-## -->

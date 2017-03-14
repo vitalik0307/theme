@@ -2,6 +2,15 @@ h2{
 	text-align:center;
 	}
 .about-text{
-	margin:10px auto;
+	margin:40px auto;
 	width:70%;
-}	
+}
+#about-banner{
+	display:flex;
+	justify-content:center;
+	height:100vh;
+}
+#about-banner h1{
+	color:white;
+	align-self:center;
+}

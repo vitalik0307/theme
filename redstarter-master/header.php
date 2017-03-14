@@ -48,15 +48,16 @@
 				</div> <!--End of banner-->
 
 			<?php elseif (is_page("about")) : ?>
-				<div id="about-banner" class="my-awesome-header">
-   					<img id="about-banner-img" <?php  the_post_thumbnail("full"); ?> 
-					<nav id="about-site-navigation" class="<?php echo $class ?> clearfix" role="navigation">
+				<div id="about-banner" class="my-awesome-header"
+   					style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(<?php the_post_thumbnail_url("full")?>)center,no-repeat;background-size:cover;">
+   					<h1><?php the_title(); ?></h1></div>
+					<nav id="about-site-navigation" class="<?php echo $class ?> clearfix"  role="navigation">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <img class="navigation-logo" alt="Navigation Logo" src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav> <!-- #site-navigation -->
 				</div> <!--End of banner-->
-				<?php ?>	
+					
 
 			<?php else : ?>
 				<div id="banner" class="my-awesome-header">

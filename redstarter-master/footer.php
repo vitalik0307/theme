@@ -8,7 +8,7 @@
 ?>
 			</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<footer id="colophon" class="site-footer clearfix" role="contentinfo">
 				<div id="footer-wrapper clearfix">
 					<div class="contact-info ">
 						<p><span class="yellow">CONTACT INFO</span></p>
